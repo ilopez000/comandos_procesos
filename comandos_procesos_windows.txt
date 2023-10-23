@@ -1,0 +1,25 @@
+tasklist: Muestra una lista de procesos en ejecución en el sistema.
+
+Ejemplo: tasklist
+Para filtrar por nombre de imagen: tasklist | find "nombre_proceso"
+taskkill: Permite terminar uno o más procesos.
+
+Para terminar un proceso por su ID: taskkill /PID número_de_pid
+Para terminar un proceso por su nombre: taskkill /IM nombre_proceso.exe
+Forzar el cierre de un proceso: taskkill /F /IM nombre_proceso.exe
+start: Inicia un nuevo proceso.
+
+Ejemplo para abrir un nuevo proceso del Notepad: start notepad.exe
+shutdown: Permite apagar o reiniciar el equipo.
+
+Para apagar: shutdown /s
+Para reiniciar: shutdown /r
+Con tiempo de espera (en segundos): shutdown /s /t 60 (espera 60 segundos antes de apagar).
+wmic: Proporciona una interfaz de línea de comandos para la administración de Windows a través de WMI (Windows Management Instrumentation).
+
+Para listar todos los procesos: wmic process list brief
+Para obtener información de un proceso específico: wmic process where name="nombre_proceso.exe" get
+powershell: Es una herramienta y lenguaje de scripting más avanzado que el CMD tradicional. A través de PowerShell, puedes interactuar con procesos usando cmdlets como Get-Process, Stop-Process, y Start-Process.
+
+Listar todos los procesos: Get-Process
+Matar un proceso por nombre: Stop-Process -Name "nombre_proceso" -Force
