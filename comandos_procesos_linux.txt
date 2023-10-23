@@ -1,0 +1,37 @@
+ps: Muestra los procesos en ejecución.
+
+Listar todos los procesos: ps aux
+Filtrar procesos por nombre: ps aux | grep nombre_proceso
+top: Muestra en tiempo real los procesos y su uso de recursos.
+
+Ejecutar: top
+htop: Es similar a top pero con una interfaz más amigable y opciones adicionales (puede requerir instalación).
+
+Ejecutar: htop
+kill: Envía señales a procesos, comúnmente se usa para terminar procesos.
+
+Terminar un proceso por su PID: kill PID
+Forzar el cierre de un proceso: kill -9 PID
+pkill: Mata procesos basados en su nombre o atributos.
+
+Para terminar un proceso por su nombre: pkill nombre_proceso
+pgrep: Busca procesos basados en su nombre o atributos.
+
+Para encontrar un proceso por su nombre: pgrep nombre_proceso
+nohup: Ejecuta un comando en segundo plano y lo mantiene en ejecución después de cerrar la shell.
+
+Ejemplo: nohup comando &
+bg: Pone un proceso detenido en segundo plano.
+
+Ejemplo: Si detienes un proceso con Ctrl+Z, puedes ponerlo en segundo plano con bg
+fg: Trae un proceso en segundo plano al primer plano.
+
+Ejemplo: fg
+jobs: Lista los trabajos que se están ejecutando en segundo plano.
+
+Ejemplo: jobs
+renice: Cambia la prioridad de un proceso en ejecución.
+Ejemplo para cambiar la prioridad de un PID: renice -n valor_nuevo_prioridad -p PID
+shutdown: Apaga o reinicia el sistema.
+Para apagar: shutdown -h now
+Para reiniciar: shutdown -r now
